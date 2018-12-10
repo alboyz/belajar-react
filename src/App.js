@@ -1,18 +1,7 @@
 import React, { Component } from 'react';
 //import component file terpisah
 import Header from './Header';
-
-
-//function component
-const Footer = () => {
-	return (
-		<div>
-					<h4>Halaman Footer</h4>
-					<p>@2018</p>
-		</div>
-	)
-
-}
+import Footer from './Footer';
 
 class App extends Component {
 	render() {
