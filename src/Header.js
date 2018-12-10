@@ -1,7 +1,5 @@
-import React from 'react';
-
-//import react component
-class Header extends React. Component{
+import React, { Component } from 'react';
+class Header extends Component{
 	render() {
 	
 		return (

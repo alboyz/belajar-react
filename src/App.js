@@ -3,6 +3,17 @@ import React, { Component } from 'react';
 import Header from './Header';
 
 
+//function component
+const Footer = () => {
+	return (
+		<div>
+					<h4>Halaman Footer</h4>
+					<p>@2018</p>
+		</div>
+	)
+
+}
+
 class App extends Component {
 	render() {
 				
@@ -12,6 +23,7 @@ class App extends Component {
 		<div>
 		<Header/>	
 		<h1>Rendering Element</h1>
+		<Footer/>
 	  </div>
 	);
 
