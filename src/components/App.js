@@ -12,8 +12,8 @@ class App extends Component {
 							
 		<div>
 		<Header/>	
-		<Footer name="Makanan Nusantara"/>
 		<List/>
+		<Footer name="Makanan Nusantara"/>
 		  </div>
 	);
 
