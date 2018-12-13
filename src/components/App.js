@@ -11,7 +11,7 @@ class App extends Component {
 		//	memasukan class Header 			
 							
 		<div>
-		<Header/>	
+		<Header List ="3 Makanan Terbaik"/>	
 		<List/>
 		<Footer name="Makanan Nusantara"/>
 		  </div>
