@@ -6,13 +6,19 @@ class Header extends Component{
 						daftar: "Daftar Nama Masakan Nusantara",
 						dataList: this.props.List
 				}
-		}			
+				this.HandlePesan = this.HandlePesan.bind(this )
+		}
+
+		HandlePesan(){
+			alert("Halaman Header")
+		}
 		render() {
 				return (
 						<div>
 								<h2>Makanan Khas Indonesia</h2>
 								<p>{this.state.daftar}</p>
 								<p>{this.state.dataList}</p>
+								<a href="/"onClick={this.HandlePesan}>Halaman Header</a>
 						</div>				
 				);			
 		}
