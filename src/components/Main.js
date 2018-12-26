@@ -10,6 +10,7 @@ class Main extends Component {
 				}
 
 				this.rubahData=this.rubahData.bind(this)
+				this.handleChange=this.handleChange.bind(this)
 		}
 
 		rubahData(){
@@ -23,8 +24,13 @@ class Main extends Component {
 
 		}
 		handleChange(e){
-				console.log(e.target.value)
-
+				const eventTarget = e.target.value
+				this.setState((state)=>{
+						return {
+								inputValue: eventTarget
+						}
+				})
+				
 		}
 
 
