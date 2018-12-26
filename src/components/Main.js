@@ -18,8 +18,14 @@ class Main extends Component {
 								title2:state.title
 						}
 
-				}) 
+				})
+
 		}
+		handleChange(e){
+				console.log(e.target.value)
+
+		}
+
 
 		render() {
 				return(
@@ -27,6 +33,8 @@ class Main extends Component {
 								<h3>{this.state.title}</h3>
 								<h2>{this.state.title2}</h2>
 								<button onClick={this.rubahData}>Rubah Data</button>
+								<br /> <br />
+								<input type="text" onChange={this.handleChange} />
 						</div>
 				)
 		}
