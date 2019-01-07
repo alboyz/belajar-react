@@ -6,7 +6,7 @@ class Main extends Component {
 				this.state = {
 						title: "Menu Makanan",
 						title2: "Menu Minuman",
-						inputValue: "Makanan"
+						inputValue: ""
 				}
 
 				this.rubahData=this.rubahData.bind(this)
@@ -23,14 +23,19 @@ class Main extends Component {
 				})
 
 		}
-		handleChange(e){
-				const eventTarget = e.target.value
-				this.setState((state)=>{
-						return {
-								inputValue: eventTarget
-						}
-				})
-				
+		handleChange(value, e){
+				this.setState({ [value]: e.target.value})
+				{
+							console.log(e.target.value)
+						
+						//	cconst eventTarget = e.target.value
+						//	cthis.setState((state)=>{
+						//			return {
+						//					inputValue: eventTarget
+						//			}
+						//	})
+
+				}		
 		}
 
 
@@ -43,7 +48,16 @@ class Main extends Component {
 								<br /> <br />
 								<input type="text" 
 										value={this.state.inputValue}
-										onChange={this.handleChange} />
+										placeholder = "nama"
+										onChange={e => this.handleChange("inputValue", e)} />
+
+								<input type="text" 
+										value={this.state.inputKota}
+										placeholder = "kota"
+										onChange={e => this.handleChange("inputKota", e)} />
+
+
+
 						</div>
 				)
 		}
