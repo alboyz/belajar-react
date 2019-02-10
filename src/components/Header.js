@@ -15,7 +15,12 @@ class Header extends Component{
 				alert(value)
 
 		}
+
+		componentDidMount(){
+				console.log("Jalan Component Did Mount")
+		}
 		render() {
+				console.log("Jalan :Render")
 				return (
 						<div>
 								<h2>Makanan Khas Indonesia</h2>

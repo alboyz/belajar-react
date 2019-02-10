@@ -13,6 +13,7 @@ class Main extends Component {
 				this.handleChange=this.handleChange.bind(this)
 		}
 
+		"use strict";
 		rubahData(){
 				this.setState((state) => {
 						return {
