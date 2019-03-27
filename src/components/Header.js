@@ -8,6 +8,7 @@ class Header extends Component{
 						statusRendering: true
 				}
 				this.HandlePesan = this.HandlePesan.bind(this )
+				this.handleElement = this.handleElement.bind(this)
 		}
 
 		HandlePesan(value, e){
@@ -20,8 +21,15 @@ class Header extends Component{
 		componentDidMount(){
 				console.log("Jalan Component Did Mount")
 		}
+
+		handleElement(){
+				this.setState((state, props) =>{
+						return {statusRendering: !state.statusRendering}
+				})
+		}
 							render() {
 									console.log("Jalan :Render")
+									console.log(this.state.statusRendering)
 									return (
 									<div>
 											{this.state.statusRendering === true ? (
@@ -35,8 +43,8 @@ class Header extends Component{
 													<h1>Selamat Tinggal</h1>
 													<h2>Jangan lupa kembali</h2>
 													</div>
-
-									)}
+											)}
+											<button onClick={this.handleElement}>change</button>
 									</div>
 									
 									)
