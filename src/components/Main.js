@@ -6,7 +6,23 @@ class Main extends Component {
 				this.state = {
 						title: "Menu Makanan",
 						title2: "Menu Minuman",
-						inputValue: ""
+						inputValue: "",
+						menuMakanan:[
+								{
+										nama: "Mie Ayam",
+										harga: 10000
+								},
+
+								{
+										nama: "Bakso",
+										harga: 15000
+								},
+
+								{
+										nama: "Sate",
+										harga: 20000
+								},
+						]
 				}
 
 				this.rubahData=this.rubahData.bind(this)
@@ -27,8 +43,8 @@ class Main extends Component {
 		handleChange(value, e){
 				this.setState({ [value]: e.target.value})
 				{
-							console.log(e.target.value)
-						
+						console.log(e.target.value)
+
 						//	cconst eventTarget = e.target.value
 						//	cthis.setState((state)=>{
 						//			return {
@@ -56,6 +72,18 @@ class Main extends Component {
 										value={this.state.inputKota}
 										placeholder = "kota"
 										onChange={e => this.handleChange("inputKota", e)} />
+
+
+								{this.state.menuMakanan.map((value, index)=>{
+										return (
+												<div key={index}>
+														<p>Nomor : {index+1}</p>
+														<p>Nama Makanan : {value.nama}</p>
+														<p>Harga : {value.harga}</p>
+												</div>
+										)
+								})}
+
 
 
 
