@@ -6,24 +6,8 @@ class Main extends Component {
 				this.state = {
 						title: "Menu Makanan",
 						title2: "Menu Minuman",
-						inputValue: "",
-						menuMakanan:[
-								{
-										nama: "Mie Ayam",
-										harga: 10000
-								},
-
-								{
-										nama: "Bakso",
-										harga: 15000
-								},
-
-								{
-										nama: "Sate",
-										harga: 20000
-								},
-						]
-				}
+						inputValue: ""
+								}
 
 				this.rubahData=this.rubahData.bind(this)
 				this.handleChange=this.handleChange.bind(this)
@@ -74,7 +58,7 @@ class Main extends Component {
 										onChange={e => this.handleChange("inputKota", e)} />
 
 
-								{this.state.menuMakanan.map((value, index)=>{
+								{this.props.menuMakanan.map((value, index)=>{
 										return (
 												<div key={index}>
 														<p>Nomor : {index+1}</p>

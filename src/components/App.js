@@ -15,13 +15,32 @@ class App extends Component {
 						<div>
 								<Header/>	
 								<Top/>
-								<Main/>
-								{
-										//	<List/>
-								}
-								<Footer name="Makanan Nusantara"/>
+								<Main 
 
-						</div>
+										menuMakanan={[
+												{
+														nama: "Mie Ayam",
+														harga: 10000
+												},
+
+												{
+														nama: "Bakso",
+														harga: 15000
+												},
+
+												{
+														nama: "Sate",
+														harga: 20000
+												},
+										]}
+										
+								/>
+						{
+								//	<List/>
+						}
+						<Footer name="Makanan Nusantara"/>
+
+				</div>
 				);
 
 		}
