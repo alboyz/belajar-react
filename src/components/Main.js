@@ -1,5 +1,23 @@
 import React, { Component } from "react"
 
+const 	menuMakanan=[
+												{
+														nama: "Mie Ayam",
+														harga: 10000
+												},
+
+												{
+														nama: "Bakso",
+														harga: 15000
+												},
+
+												{
+														nama: "Sate",
+														harga: 20000
+												},
+										]
+
+
 class Main extends Component {
 		constructor(props){
 				super(props)
@@ -58,7 +76,7 @@ class Main extends Component {
 										onChange={e => this.handleChange("inputKota", e)} />
 
 
-								{this.props.menuMakanan.map((value, index)=>{
+								{menuMakanan.map((value, index)=>{
 										return (
 												<div key={index}>
 														<p>Nomor : {index+1}</p>
@@ -67,10 +85,6 @@ class Main extends Component {
 												</div>
 										)
 								})}
-
-
-
-
 						</div>
 				)
 		}
