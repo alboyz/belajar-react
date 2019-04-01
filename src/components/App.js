@@ -4,8 +4,9 @@ import Header from './Header';
 import Footer from './Footer';
 //import List from './List';
 import Top from './Top'
-import Form from './Form'
+//import Form from './Form'
 //import Main from './Main'
+import CustomInput from './CustomInput'
 
 class App extends Component {
 		render() {
@@ -16,9 +17,9 @@ class App extends Component {
 						<div>
 								<Header/>	
 								<Top/>
-								<Form />
-							
+								<CustomInput/>
 						{
+								//<Form />
 								//<Main/>
 								//	<List/>
 						}
