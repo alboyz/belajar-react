@@ -4,7 +4,8 @@ import Header from './Header';
 import Footer from './Footer';
 //import List from './List';
 import Top from './Top'
-import Main from './Main'
+import Form from './Form'
+//import Main from './Main'
 
 class App extends Component {
 		render() {
@@ -15,9 +16,10 @@ class App extends Component {
 						<div>
 								<Header/>	
 								<Top/>
-								<Main 																			
-								/>
+								<Form />
+							
 						{
+								//<Main/>
 								//	<List/>
 						}
 						<Footer name="Makanan Nusantara"/>
@@ -26,7 +28,7 @@ class App extends Component {
 				);
 
 		}
-}
 
+}
 
 export default App;
