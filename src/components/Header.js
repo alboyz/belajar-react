@@ -27,43 +27,49 @@ class Header extends Component{
 						return {statusRendering: !state.statusRendering}
 				})
 		}
-							render() {
-									console.log("Jalan :Render")
-									console.log(this.state.statusRendering)
-									return (
-									<div>
-											{this.state.statusRendering === true ? (
-													<div>
-													<h1>Selamat Datang</h1>
-													<h2>Silahkan Pilih Makanan</h2>
+		render() {
+				console.log("Jalan :Render")
+				console.log(this.state.statusRendering)
+				return (
+						<div>
+								{this.state.statusRendering === true ? (
+										<div>
+												<h1
+														style={{
+																color:"blue",
+																backgroundColor:"orange",
+																marginTop:"100px"
+														}}
+												>Selamat Datang</h1>
+												<h2>Silahkan Pilih Makanan</h2>
 
-													</div>
-											):(
-													<div>
-													<h1>Selamat Tinggal</h1>
-													<h2>Jangan lupa kembali</h2>
-													</div>
-											)}
-											<button onClick={this.handleElement}>change</button>
-									</div>
-									
-									)
-		
+										</div>
+								):(
+										<div>
+												<h1>Selamat Tinggal</h1>
+												<h2>Jangan lupa kembali</h2>
+										</div>
+								)}
+								<button onClick={this.handleElement}>change</button>
+						</div>
 
-		//				return (
-		//						<div>
-		//								<h2>Makanan Khas Indonesia</h2>
-		//								<p>{this.state.daftar}</p>
-		//								<p>{this.state.dataList}</p>
-		//								<a href="/"onClick={(e) => this.HandlePesan("Pesan dari Header", e)}>Halaman Header</a>
-		//						</div>
+				)
 
-    }	
+
+				//				return (
+				//						<div>
+				//								<h2>Makanan Khas Indonesia</h2>
+				//								<p>{this.state.daftar}</p>
+				//								<p>{this.state.dataList}</p>
+				//								<a href="/"onClick={(e) => this.HandlePesan("Pesan dari Header", e)}>Halaman Header</a>
+				//						</div>
+
+		}	
 } 	
 
 
 
 
 
- 
+
 export default Header;
