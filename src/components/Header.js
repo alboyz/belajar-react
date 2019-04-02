@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+const judul = {
+		color: "orange",
+		backgroundColor: "blue",
+		marginTop: "100px"
+
+}
 class Header extends Component{
 		constructor(props){
 				super(props);
@@ -41,7 +47,7 @@ class Header extends Component{
 																marginTop:"100px"
 														}}
 												>Selamat Datang</h1>
-												<h2>Silahkan Pilih Makanan</h2>
+												<h2 style={judul}>Silahkan Pilih Makanan</h2>
 
 										</div>
 								):(
