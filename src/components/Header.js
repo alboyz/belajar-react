@@ -56,7 +56,7 @@ class Header extends Component{
 								):(
 										<div>
 												<h1 id="judulKedua">Selamat Tinggal</h1>
-												<h2>Jangan lupa kembali</h2>
+												<h2 className="judulInfo">Jangan lupa kembali</h2>
 										</div>
 								)}
 								<button onClick={this.handleElement}>change</button>
