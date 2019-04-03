@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import "./style/header.css";
+
+
 const judul = {
 		color: "orange",
 		backgroundColor: "blue",
@@ -52,7 +55,7 @@ class Header extends Component{
 										</div>
 								):(
 										<div>
-												<h1>Selamat Tinggal</h1>
+												<h1 id="judulKedua">Selamat Tinggal</h1>
 												<h2>Jangan lupa kembali</h2>
 										</div>
 								)}
